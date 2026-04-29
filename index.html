@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sakota portfolio </title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+  <header id="top">
+   <img src="img/main-visual.png" alt="mainvisual" class="mainvisual">
+    
+      <div class="pc-menu">
+<nav>
+  <ul>
+    <li><a href="#profile">profile</a></li>
+    <li><a href="#portfolio">portfolio</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</nav>  
+</div>
+
+    <div class="sp-menu">
+      <span class="material-symbols-outlined" id="open">menu</span>
+    </div>
+  </header>
+
+  <div class="overlay">
+ <span class="material-symbols-outlined" id="close">close</span>
+<nav>
+  <ul>
+   <li><a href="#profile">profile</a></li>
+    <li><a href="#portfolio">portfolio</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#contact">contact</a></li>
+     <img src="img/mini1.png" alt="mini3" class="mini3">
+  </ul>
+</nav>  
+</div>
+
+  <main>
+    <!-- profile -->
+     <div class="mini-grope">
+      <h1>
+      <div id="profile">profile</div>
+    </h1>
+    <img src="img/mini2.png" alt="mini1" class="mini1">
+     </div>
+    
+    <div class="profile-text">
+         <p>2001年生まれ。大阪府在住。</p>
+
+     <p>NPO法人で不登校児童・生徒の居場所作りや学習支援をしながら、未経験からWeb制作を学んでいます。</p>
+     <p>現在はHTML/CSS/Javascriptの基本的なコーディングが可能です。</p>
+
+     <p>私が特に大事にしているのは、対話を通じて「言葉にならない空気感」を汲み取ることです。</p>
+     <p>現場仕事で培った柔軟さを活かし、ご依頼主様のイメージにじっくりと耳を傾けます。</p>
+     <p>経験が浅い分、信頼を第一に、ご満足いただけるまで誠実に制作させていただきます。</p>
+    </div>
+
+    
+     <img src="img/5.png" alt="sakota" class="sakota">
+
+     <!-- portfolio -->
+     <h2>
+      <div id="portfolio">portfolio</div>
+    </h2>
+     <img src="img/mini3.png" alt="mini2" class="mini2">
+    <div class="roop">
+      <div class="sp-img">
+        <a href="https://sakotaakine1102-byte.github.io/-/">
+      <img src="img/sp1.png" alt="sp1" class="sp1">
+     </a>
+     <a href="https://sakotaakine1102-byte.github.io/bike/">
+      <img src="img/sp2.png" alt="sp2" class="sp2">
+     </a>
+     <a href="https://sakotaakine1102-byte.github.io/DTFNTR2/">
+      <img src="img/sp3.png" alt="sp3" class="sp3">
+     </a>
+     <a href="https://sakotaakine1102-byte.github.io/My-site-2-3/">
+      <img src="img/sp4.png" alt="sp4" class="sp4">
+     </a>
+    </div>
+    </div>
+    <section class="skill-section">
+    <h3>
+    <div id="skills">skills</div>
+  </h3>
+  <p>
+    「基本を忠実に、丁寧に」をモットーに学習しています。<br>現在はHTML/CSSを用いた静的なサイト制作に加え、JavaScriptでの動的な表現を習得中です。<br>現場仕事で培った「相手の意図を正確に形にする力」を大切に、読みやすくメンテナンス性の高いコードを心がけています。
+  </p>
+  <div class="skills-img">
+    <img src="img/1.png" alt="skill1" class="skill1">
+    <img src="img/2.png" alt="skill2" class="skill2">
+      <img src="img/3.png" alt="skill3" class="skill3">
+  </div>
+    </section>
+  
+
+  <h4>
+    <div id="contact">contact</div>
+  </h4>
+  <div class="contact-form">
+  <h5>Web制作のお問い合わせ</h5>
+  <form id="contact-form" action="https://formspree.io/f/xdayjyba" method="POST">
+    
+    <div class="field">
+      <label>お名前・貴社名<span>必須</span></label>
+      <input type="text" name="内容" required placeholder="例：山田 太郎">
+    </div>
+
+    <div class="field">
+      <label>メールアドレス<span>必須</span></label>
+      <input type="email" name="内容" required placeholder="example@mail.com">
+    </div>
+
+    <div class="field">
+      <label>ご依頼の種類</label>
+      <select name="massage">
+        <option value="新規制作">新規制作</option>
+        <option value="リニューアル">リニューアル</option>
+        <option value="その他">その他</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>お問い合わせ内容<span>必須</span></label>
+      <textarea name="内容" required placeholder="制作の目的や希望などをご記入ください"></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">送信する</button>
+  </form>
+</div>
+<!-- 送信オーバーレイ -->
+<div class="form-overlay" id="form-overlay" aria-hidden="true">
+  <!-- 送信中 -->
+  <div class="form-state form-state-sending" data-state="sending">
+    <div class="paper-plane">
+      <svg viewBox="0 0 64 64" width="80" height="80" aria-hidden="true">
+        <path d="M2 32 L62 4 L46 60 L34 38 L2 32 Z M34 38 L62 4" 
+              fill="#fff8ee" stroke="#3aa1d1" stroke-width="2" 
+              stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <p class="form-state-text">送信中です…</p>
+  </div>
+
+  <!-- 送信完了 -->
+  <div class="form-state form-state-success" data-state="success">
+    <div class="success-mark">
+      <svg viewBox="0 0 64 64" width="80" height="80" aria-hidden="true">
+        <circle cx="32" cy="32" r="28" fill="none" stroke="#3aa1d1" stroke-width="3"/>
+        <path d="M18 33 L28 43 L46 23" fill="none" stroke="#3aa1d1" 
+              stroke-width="4" stroke-linecap="round" stroke-linejoin="round" 
+              class="success-check"/>
+      </svg>
+    </div>
+    <h2 class="form-state-title">送信を完了しました</h2>
+    <p class="form-state-text">お問い合わせいただきありがとうございます。<br>2〜3日以内にご返信いたします。</p>
+    <div class="form-state-actions">
+      <a href="index.html" class="btn btn-primary">トップページへ戻る</a>
+      <button type="button" class="btn btn-secondary" id="form-reset">もう一度送信する</button>
+    </div>
+  </div>
+
+  <!-- 送信エラー -->
+  <div class="form-state form-state-error" data-state="error">
+    <p class="form-state-title">送信に失敗しました</p>
+    <p class="form-state-text">通信エラーが発生しました。<br>恐れ入りますが、もう1度送信をお願いしますm(__)m。</p>
+    <button type="button" class="btn btn-secondary" id="form-retry">もう一度試す</button>
+  </div>
+
+  </main>
+
+   <script src="js/main.js"></script>
+   <footer>
+  <div class="footer-content">
+    <a href="#top" class="footer-logo-link">
+    <img src="img/logo2.png" alt="logo" class="logo">
+    </a>
+    <p class="copyright">&copy; 2026 sakota</p>
+  </div>
+</footer>
+</body>
+
+</html>
